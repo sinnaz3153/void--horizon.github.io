@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Horizon - Get Started</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo img {
+            height: 50px;
+        }
+        h1, h2 {
+            text-align: center;
+            background: linear-gradient(to right, #9d4edd, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content {
+            background-color: #2a2a4e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .steps {
+            margin-top: 20px;
+        }
+        .step {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        .step:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: calc(100% + 15px);
+            width: 2px;
+            background-color: #9d4edd;
+        }
+        .step:last-child:before {
+            height: 100%;
+        }
+        .step h3 {
+            margin-top: 0;
+            background: linear-gradient(to right, #9d4edd, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .optional {
+            border: 1px solid #9d4edd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switch p {
+            margin: 0;
+        }
+        .language-switch a {
+            color: #9d4edd;
+            text-decoration: none;
+        }
+          .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <p class="lang-en"><a href="#" onclick="switchLanguage('de')">Deutsch</a></p>
+            <p class="lang-de"><a href="#" onclick="switchLanguage('en')">English</a></p>
+        </div>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="png/logo-omepage.png" alt="Void Horizon Logo">
+                </a>
+            </div>
+        </header>
+        <h1 class="lang-de">Erste Schritte</h1>
+        <h1 class="lang-en">Get Started</h1>
+        <div class="content">
+            <p class="lang-de">Willkommen bei Void Horizon! Folge diesen Schritten, um dein Abenteuer zu beginnen:</p>
+            <p class="lang-en">Welcome to Void Horizon! Follow these steps to start your adventure:</p>
+            <div class="steps">
+                <div class="step">
+                    <h3 class="lang-de">Schritt 1: Minecraft vorbereiten</h3>
+                    <h3 class="lang-en">Step 1: Prepare Minecraft</h3>
+                    <p class="lang-de">Stelle sicher, dass du Minecraft Java Edition oder Bedrock Edition (Versionen 1.18 - 1.21) installiert hast.</p>
+                    <p class="lang-en">Make sure you have Minecraft Java Edition or Bedrock Edition (versions 1.18 - 1.21) installed.</p>
+                </div>
+                <div class="step">
+                    <h3 class="lang-de">Schritt 2: Server hinzufügen</h3>
+                    <h3 class="lang-en">Step 2: Add the Server</h3>
+                    <p class="lang-de">Füge unsere Server-Adresse hinzu: void-horizon.ddns.net (Bedrock Port: 19132)</p>
+                    <p class="lang-en">Add our server address: void-horizon.ddns.net (Bedrock Port: 19132)</p>
+                </div>
+                <div class="step">
+                    <h3 class="lang-de">Schritt 3: Verbinden und Spielen</h3>
+                    <h3 class="lang-en">Step 3: Connect and Play</h3>
+                    <p class="lang-de">Verbinde dich mit dem Server und beginne dein Abenteuer!</p>
+                    <p class="lang-en">Connect to the server and start your adventure!</p>
+                </div>
+            </div>
+            <div class="optional">
+                <h3 class="lang-de">Optionale Schritte</h3>
+                <h3 class="lang-en">Optional Steps</h3>
+                <p class="lang-de">- Tritt unserem Discord-Server bei für Community-Updates und Support</p>
+                <p class="lang-en">- Join our Discord server for community updates and support</p>
+                <p class="lang-de">- Folge uns auf Social Media für die neuesten News und Events</p>
+                <p class="lang-en">- Follow us on social media for the latest news and events</p>
+            </div>
+        <div class="social-links">
+            <a href="#"><img src="png/discord-logo.png" alt="Discord"></a>
+            <a href="#"><img src="png/youtube-logo.png" alt="YouTube"></a>
+            <a href="#"><img src="png/twitch-logo.png" alt="Twitch"></a>
+        </div>
+        </div>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang-de, .lang-en').forEach(el => {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.lang-' + lang).forEach(el => {
+                el.style.display = 'block';
+            });
+            document.documentElement.lang = lang;
+        }
+        // Initialize with German
+        switchLanguage('de');
+    </script>
+</body>
+</html>

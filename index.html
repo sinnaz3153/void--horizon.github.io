@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Horizon Minecraft Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .main-content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1, h2 {
+            background: linear-gradient(to right, #9d4edd, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #9d4edd, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .description {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            background: linear-gradient(to right, #e0e0e0, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .buttons {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #9d4edd;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .feature {
+            width: 45%;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .feature h3 {
+            background: linear-gradient(to right, #9d4edd, #c77dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switch a {
+            color: #9d4edd;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <p class="lang-en"><a href="#" onclick="switchLanguage('de')">Deutsch</a>
+            <p class="lang-de"><a href="#" onclick="switchLanguage('en')">English</a>
+        </div>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="png/logo-omepage.png" alt="Void Horizon Logo">
+                </a>
+            </div>
+            <nav>
+                <!-- Add navigation items if needed -->
+            </nav>
+        </header>
+        <div class="main-content">
+            <h1 class="lang-de">Willkommen bei Void Horizon</h1>
+            <h1 class="lang-en">Welcome to Void Horizon</h1>
+            <div class="subtitle lang-de">Dein ultimatives Minecraft-Abenteuer erwartet dich</div>
+            <div class="subtitle lang-en">Your ultimate Minecraft adventure awaits</div>
+            <p class="description lang-de">Tritt unserer lebendigen Minecraft-Community bei und entdecke endlose Möglichkeiten in unseren CityBuild- und Survival-Spielmodi.</p>
+            <p class="description lang-en">Join our vibrant Minecraft community and explore endless possibilities in our CityBuild and Survival game modes.</p>
+            <div class="buttons">
+                <a href="get-started.html" class="button lang-de">Loslegen</a>
+                <a href="get-started.html" class="button lang-en">Get Started</a>
+                <a href="infos.html" class="button lang-de">Server-Info</a>
+                <a href="infos.html" class="button lang-en">Server Info</a>
+            </div>
+            <div>
+                <strong class="lang-de">Server-IP:</strong>
+                <strong class="lang-en">Server IP:</strong>
+                void-horizon.ddns.net
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>CityBuild</h3>
+                <p class="lang-de">Baue deine Traumstadt mit unzähligen Plots. Gestalte deine eigene Welt und zeige deine Kreativität.</p>
+                <p class="lang-en">Build your dream city with countless plots. Shape your own world and showcase your creativity.</p>
+            </div>
+            <div class="feature">
+                <h3>Survival</h3>
+                <p class="lang-de">Überlebe in unserer herausfordernden Welt. Sammle Ressourcen, baue Unterschlüpfe und verbünde dich mit anderen Spielern.</p>
+                <p class="lang-en">Survive in our challenging world. Gather resources, build shelters, and ally with other players.</p>
+            </div>
+            <div class="feature">
+                <h3 class="lang-de">Events</h3>
+                <h3 class="lang-en">Events</h3>
+                <p class="lang-de">Nimm an coolen und spaßigen Events teil. Regelmäßige Turniere und besondere Herausforderungen warten auf dich!</p>
+                <p class="lang-en">Participate in cool and fun events. Regular tournaments and special challenges await you!</p>
+            </div>
+            <div class="feature">
+                <h3>Lobby</h3>
+                <p class="lang-de">Entdecke unser faszinierendes Labyrinth und meistere aufregende Parkour-Herausforderungen in unserer einzigartigen Lobby.</p>
+                <p class="lang-en">Explore our fascinating maze and master exciting parkour challenges in our unique lobby.</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="png/discord-logo.png" alt="Discord"></a>
+            <a href="#"><img src="png/youtube-logo.png" alt="YouTube"></a>
+            <a href="#"><img src="png/twitch-logo.png" alt="Twitch"></a>
+        </div>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang-de, .lang-en').forEach(el => {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.lang-' + lang).forEach(el => {
+                el.style.display = 'block';
+            });
+            document.documentElement.lang = lang;
+        }
+        // Initialize with German
+        switchLanguage('de');
+    </script>
+</body>
+</html>
